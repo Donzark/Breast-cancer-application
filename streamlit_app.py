@@ -23,7 +23,7 @@ st.set_page_config(
 @st.cache_resource
 def load_prediction_model():
     """Loads the trained model and caches it."""
-    MODEL_PATH = "./model/Augmented_breast_cancer_model_2"
+    MODEL_PATH = "./model/resnet_breast_cancer_model"
     model = tf.keras.layers.TFSMLayer(MODEL_PATH, call_endpoint='serving_default')
     return model
 
