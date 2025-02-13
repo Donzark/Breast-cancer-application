@@ -19,6 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+MODEL_PATH = "./model/resnet_breast_cancer_model"
 # Function to preprocess and predict
 @st.cache_resource
 def load_prediction_model():
