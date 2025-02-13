@@ -1,4 +1,3 @@
-
 import os
 os.system("pip install tensorflow-hub")
 import sys
@@ -24,7 +23,7 @@ st.set_page_config(
 @st.cache_resource
 def load_prediction_model():
     """Loads the trained model and caches it."""
-    MODEL_PATH = "./resnet_cancer_model"
+    MODEL_PATH = "./model/Augmented_breast_cancer_model_2"
     model = tf.keras.layers.TFSMLayer(MODEL_PATH, call_endpoint='serving_default')
     return model
 
